@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Banner1 from './Components/Banner1';
+import Cardone from './Components/Cardone';
+import Cards from './Components/Cards';
+import Footer from './Components/Footer';
+import NavBar from './Components/NavBar';
+import Row from './Components/Row';
+import ScrollingText from './Components/ScrollingText';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div  className="d-flex justify-content-center align-items-center w-100 bg-$secondary: $gray-100">
+    
+      <div style={{width:'95%'}} className='bg-light p-5 shadow h-100  '>
+        <Banner1/>
+        <NavBar/>
+        <Row/>
+        <Cards/>
+        <ScrollingText/>
+        <Footer/>
+        <Cardone/>
+      </div>
     </div>
   );
 }
